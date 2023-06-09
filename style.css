@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+:root{
+  font-size: 62.5%;
+  --gray-900: #121214;
+  --gray-300: #444448;
+
+  --primary-200: #fcd085;
+  --primary-400: #ffbc48;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-300);
+ 
+}
+
+.conteiner{
+  background-color: var(--gray-900);
+  width: 50vw;
+  height: 90vh;
+  border-radius: 1rem;
+}
+
+/* ========= Header ========= */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.input-search {
+  position: relative;
+}
+
+.input-search input {
+  width: 35vw;
+  height: 4.5rem;
+  border-radius: .5rem;
+  border: none;
+  padding: 1rem;
+  background-color: var(--gray-300);
+  
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.input-search img {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/* ========= Main =========  */
+main {
+  padding-inline: 3.2rem;
+  max-width: 80rem;
+  margin: 6rem auto;
+  
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+ 
+}
+
+.card {
+  
+  background-color: var(--gray-300);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all .2s;
+}
+
+.cards:has(.card:hover) .card:not(:hover) {
+  opacity: .6;
+  scale: .98;
+  
+}
+
+.card h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+  opacity: .5;
+  margin-bottom: 3rem;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.card a:hover {
+  color: var(--primary-200);
+}
+
